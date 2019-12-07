@@ -1,4 +1,9 @@
-$redis = new \Redis();
+       $redis = new \Redis();
        $redis->connect("127.0.0.1",6379,5) ;
        $redis->set("wangxid","wxdong2008",100);
        $this->writeJson(200,"OK",$redis->get("wangxid"));
+       
+       extension_loaded("redis")//判断REDIS有没有拓展
+       
+       
+       
