@@ -1,0 +1,24 @@
+https://github.com/laruence/yaconf    //git下载地址
+进入目录
+phpize
+./configure --with-php-config=/目录
+make -j
+make install 
+安装完成
+
+php.ini 配置
+extension=yaconf.so
+yaconf.directory=/data/wwwroot/default/easy/App/ini
+service php-fpm restart //重启PHP
+php -m 可以看到安装的yaconf拓展
+在/data/wwwroot/default/easy/App/ini里面创建应用文件如redis.ini(一定要以.ini结束)
+可以如下部署
+ame="yaconf"
+year=2015
+features[]="fast"
+features.1="light"
+features.plus="zero-copy"
+features.constant=PHP_VERSION
+features.env=${HOME}
+ $a =\Yaconf::get("redis");
+ var_dump($a);
