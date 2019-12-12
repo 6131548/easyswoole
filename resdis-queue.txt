@@ -1,5 +1,7 @@
 ./redis-cli
-rpush redislist 1 //在名称为redislist中添加1
+https://my.oschina.net/cniiliuqi/blog/67513?p={{currentPage+1}}     //简介网址
+lPush redislist 1 //从头部称为redislist中添加1
+rpush redislist 1 //从尾部在名称为redislist中添加1
 lrange redislist 0 1  (查找0到1之间的列表）
 lrange redislist 0 -1  (查看所有列表）
 rpop reidslist //消耗最后一个
