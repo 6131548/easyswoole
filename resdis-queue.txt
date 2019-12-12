@@ -1,3 +1,6 @@
 ./redis-cli
 rpush redislist 1 //在名称为redislist中添加1
 lrange redislist 0 1  (查找0到1之间的列表）
+lrange redislist 0 -1  (查看所有列表）
+rpop reidslist //消耗最后一个
+lpop redislist //消耗第一个
