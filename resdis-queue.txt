@@ -1,0 +1,3 @@
+./redis-cli
+rpush redislist 1 //在名称为redislist中添加1
+lrange redislist 0 1  (查找0到1之间的列表）
