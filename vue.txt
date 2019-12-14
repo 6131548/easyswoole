@@ -1,0 +1,4 @@
+去官网安装nodejs
+打开vue项目
+npm install //下载
+npm run dev //运行
